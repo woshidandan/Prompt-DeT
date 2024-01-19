@@ -2,11 +2,17 @@
 [![Framework](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?&logo=PyTorch&logoColor=white)](https://pytorch.org/)
 
 <div align="center">
+
 <h1>
+<b>
+Re
+</b>
+</h1>  
+<h2>
 <b>
 Rethinking Image Color Aesthetics Assessment: Models, Datasets and Benchmarks
 </b>
-</h1>
+</h2>
 <h4>
 <b>
 Shuai He, Yi Xiao，Anlong Ming, Huadong Ma
@@ -16,7 +22,6 @@ Beijing University of Posts and Telecommunications
 </h4>
 </div>
 
-<p style="color:red">这是红色文本</p>
 
 
 # Introduction
