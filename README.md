@@ -14,6 +14,7 @@ Details will be published after the acceptance of the paper
 ![image](https://github.com/woshidandan/DeT-Plus/assets/15050507/81db22d9-6319-4da8-8708-0b96188e854a)
 
 # Requirement
+```
 einops==0.6.1
 ftfy==6.1.1
 nni==2.10.1
@@ -30,7 +31,4 @@ tensorboardX==2.6.2.2
 timm==0.9.7
 tqdm==4.66.1
 yacs==0.1.8
-
-
-
-Code will be released! 
+```
