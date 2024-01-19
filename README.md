@@ -1,18 +1,33 @@
-# Refine-for-ICAA
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Framework](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?&logo=PyTorch&logoColor=white)](https://pytorch.org/)
+
+<div align="center">
+<h1>
+<b>
+Rethinking Image Color Aesthetics Assessment: Models, Datasets and Benchmarks
+</b>
+</h1>
+<h4>
+<b>
+Shuai He, Yi Xiao，Anlong Ming, Huadong Ma
+    
+Beijing University of Posts and Telecommunications
+</b>
+</h4>
+</div>
+
+
+# Introduction
 Our refined work of [ICCV 2023 "Thinking Image Color Aesthetics Assessment: Models, Datasets and Benchmarks"]
 
-More powerful framework, higher performance, more functions!
-
-Details will be published after the acceptance of the paper!
-
-Weights and dataset can be downloaded from: 
+More powerful framework, higher performance, more functions! Weights and dataset can be downloaded from: 
 [DeT_plus_ICAA](https://mega.nz/file/I1UjlYoD#fKkLdtubl5OXpQQXB37_OOy0A9kw8HpuQwW_x80MU-s),
 [DeT_plus_PARA](https://mega.nz/file/Mp82UKoI#7a4ik8jFBLnQewE0-bPNg5rz1F6-XMOp1WSXw_FG3XQ),
 [DeT_plus_SPAQ](https://mega.nz/file/Z9tUVJKI#HqgW77gxdtHF6QG5GfnLA31druLONw9IFlsvY3w4W_Q),
 [ICAA17K+ dataset](https://mega.nz/file/V8kwgLaD#ty6IG7gyQduanfd1ViloZVlREq18e0MuWwqCnvTMtiM),
 [RN50](https://mega.nz/file/9sUAzZIZ#Cu4C5QamEn41abU6yz_39IN0by-qIuMkRmh4YFBTy8I).
 
-We aspire for our work to make a valuable contribution to the ongoing research on ICAA within the community!
+Details will be published after the acceptance of the paper, we aspire for our work to make a valuable contribution to the ongoing research on ICAA within the community!
 
 # Performance
 <div align="center">
