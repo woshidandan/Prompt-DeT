@@ -3,7 +3,7 @@ Our refined work of [ICCV 2023 "Thinking Image Color Aesthetics Assessment: Mode
 
 More powerful framework, higher performance, more functions!
 
-Details will be published after the acceptance of the paper
+Details will be published after the acceptance of the paper!
 
 # Performance
 
