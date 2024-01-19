@@ -29,7 +29,8 @@ More powerful framework, higher performance, more functions! Weights and dataset
 
 Details will be published after the acceptance of the paper, we aspire for our work to make a valuable contribution to the ongoing research on ICAA within the community!
 
-# Performance
+# Performance of DeT-Plus
+We develop a comprehensive benchmark comprising of 17 methods, which is the most extensive to date, based on three datasets (ICAA17K+, SPAQ, and PARA) for evaluating the holistic and sub-attribute performance of ICAA methods. Our work achieves state-of-the-art (SOTA) performance on all benchmarks.
 <div align="center">
   
 ![image](https://github.com/woshidandan/DeT-Plus/assets/15050507/7269c1a4-8381-4b79-94e8-b9df5340f994)
