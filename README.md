@@ -5,6 +5,13 @@ More powerful framework, higher performance, more functions!
 
 Details will be published after the acceptance of the paper!
 
+Weights and dataset can be downloaded from 
+![DeT_plus_ICAA](https://mega.nz/file/I1UjlYoD#fKkLdtubl5OXpQQXB37_OOy0A9kw8HpuQwW_x80MU-s)
+![DeT_plus_PARA](https://mega.nz/file/Mp82UKoI#7a4ik8jFBLnQewE0-bPNg5rz1F6-XMOp1WSXw_FG3XQ)
+![DeT_plus_SPAQ](https://mega.nz/file/Z9tUVJKI#HqgW77gxdtHF6QG5GfnLA31druLONw9IFlsvY3w4W_Q)
+![ICAA17K+ dataset](https://mega.nz/file/V8kwgLaD#ty6IG7gyQduanfd1ViloZVlREq18e0MuWwqCnvTMtiM)
+![RN50]([https://mega.nz/file/V8kwgLaD#ty6IG7gyQduanfd1ViloZVlREq18e0MuWwqCnvTMtiM](https://mega.nz/file/9sUAzZIZ#Cu4C5QamEn41abU6yz_39IN0by-qIuMkRmh4YFBTy8I))
+
 # Performance
 
 ![image](https://github.com/woshidandan/DeT-Plus/assets/15050507/7269c1a4-8381-4b79-94e8-b9df5340f994)
