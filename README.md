@@ -16,6 +16,7 @@ Beijing University of Posts and Telecommunications
 </h4>
 </div>
 
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
 
 # Introduction
 Our refined work of [ICCV 2023 "Thinking Image Color Aesthetics Assessment: Models, Datasets and Benchmarks"].
