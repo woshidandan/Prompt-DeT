@@ -29,6 +29,14 @@ More powerful framework, higher performance, more functions! Weights and dataset
 
 Details will be published after the acceptance of the paper, we aspire for our work to make a valuable contribution to the ongoing research on ICAA within the community!
 
+# ICAA17K+
+To enhance the ICAA17K+ dataset, we have incorporated 2,000 detailed labels concerning color attributes including colorfulness, harmony, and temperature annotations.
+<div align="center">
+    
+![image](https://github.com/woshidandan/DeT-Plus/assets/15050507/561076c4-d14d-4f06-afab-82e986e64901)
+
+</div>
+
 # Performance of DeT-Plus
 We develop a comprehensive benchmark comprising of 17 methods, which is the most extensive to date, based on three datasets (ICAA17K+, SPAQ, and PARA) for evaluating the holistic and sub-attribute performance of ICAA methods. Our work achieves state-of-the-art (SOTA) performance on all benchmarks.
 <div align="center">
