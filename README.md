@@ -10,15 +10,19 @@ Weights and dataset can be downloaded from:
 [DeT_plus_PARA](https://mega.nz/file/Mp82UKoI#7a4ik8jFBLnQewE0-bPNg5rz1F6-XMOp1WSXw_FG3XQ),
 [DeT_plus_SPAQ](https://mega.nz/file/Z9tUVJKI#HqgW77gxdtHF6QG5GfnLA31druLONw9IFlsvY3w4W_Q),
 [ICAA17K+ dataset](https://mega.nz/file/V8kwgLaD#ty6IG7gyQduanfd1ViloZVlREq18e0MuWwqCnvTMtiM),
-[RN50]([https://mega.nz/file/V8kwgLaD#ty6IG7gyQduanfd1ViloZVlREq18e0MuWwqCnvTMtiM](https://mega.nz/file/9sUAzZIZ#Cu4C5QamEn41abU6yz_39IN0by-qIuMkRmh4YFBTy8I)).
+[RN50](https://mega.nz/file/9sUAzZIZ#Cu4C5QamEn41abU6yz_39IN0by-qIuMkRmh4YFBTy8I).
+
+We aspire for our work to make a valuable contribution to the ongoing research on ICAA within the community!
 
 # Performance
-
+<div align="center">
 ![image](https://github.com/woshidandan/DeT-Plus/assets/15050507/7269c1a4-8381-4b79-94e8-b9df5340f994)
 
 ![image](https://github.com/woshidandan/DeT-Plus/assets/15050507/589cfcaf-05c9-4af5-9083-87aae294e9ca)
 
 ![image](https://github.com/woshidandan/DeT-Plus/assets/15050507/81db22d9-6319-4da8-8708-0b96188e854a)
+
+</div>
 
 # Requirement
 ```
