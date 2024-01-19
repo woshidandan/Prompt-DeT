@@ -2,17 +2,11 @@
 [![Framework](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?&logo=PyTorch&logoColor=white)](https://pytorch.org/)
 
 <div align="center">
-
 <h1>
-<b>
-Re
-</b>
-</h1>  
-<h2>
 <b>
 Rethinking Image Color Aesthetics Assessment: Models, Datasets and Benchmarks
 </b>
-</h2>
+</h1>
 <h4>
 <b>
 Shuai He, Yi Xiao，Anlong Ming, Huadong Ma
