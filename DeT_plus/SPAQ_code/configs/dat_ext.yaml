@@ -1,0 +1,61 @@
+MODEL:
+  TYPE: dat
+  NAME: dat_ext
+  DAT:
+    img_size: 224
+    patch_size: 4
+    num_classes: 1
+    expansion: 4
+    dim_stem: 128
+    dims: [128, 256, 512, 1024]
+    depths: [2, 2, 18, 2]
+    stage_spec: [[L, S], [L, S], [L, D, L, D, L, D, L, D, L, D, L, D, L, D, L, D, L, D], [L, D]]
+    heads: [4, 8, 16, 32]
+    window_sizes: [7, 7, 7, 7] 
+    groups: [-1, -1, 4, 8]
+    use_pes: [False, False, True, True]
+    dwc_pes: [False, False, False, False]
+    strides: [-1, -1, 1, 1]
+    sr_ratios: [-1, -1, -1, -1]
+    offset_range_factor: [-1, -1, 2, 2]
+    no_offs: [False, False, False, False]
+    fixed_pes: [False, False, False, False]
+    use_dwc_mlps: [False, False, False, False]
+    use_conv_patches: False
+    drop_rate: 0.0
+    attn_drop_rate: 0.0
+    drop_path_rate: 0.5
+    classnames: [
+        ["beautiful.", "ugly."],
+        ["colorful.", "monotone."],
+        ["warm tone.", "cold tone."],
+        ["harmonious color.", "chaotic color."],
+    ]
+    means: [
+        0.5430292152312776,
+        0.5746566870547009,
+        0.5060040414776488,
+        0.5041112922830655,
+    ]
+    stds: [
+        0.026028287910949126,
+        0.04772679232711666,
+        0.021420622256879244,
+        0.024548609685370107,
+    ]
+    pretrained_clip_path: 'checkpoint/RN50.pt'
+    clip_pretrained: True
+    adapter_finetune: False
+    curve_mapping: False
+    
+
+TRAIN:
+  EPOCHS: 300
+  WARMUP_EPOCHS: 50
+  CLIP_GRAD: 1.0
+  BASE_LR: 4e-4
+
+DATA:
+  BATCH_SIZE: 128
+
+SAVE_FREQ: 1
