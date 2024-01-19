@@ -16,7 +16,8 @@ Beijing University of Posts and Telecommunications
 </h4>
 </div>
 
-- ![#f03c15](test) `#f03c15`
+<p style="color:red">这是红色文本</p>
+
 
 # Introduction
 Our refined work of [ICCV 2023 "Thinking Image Color Aesthetics Assessment: Models, Datasets and Benchmarks"].
