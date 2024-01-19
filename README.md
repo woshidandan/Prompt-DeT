@@ -19,7 +19,7 @@ Beijing University of Posts and Telecommunications
 
 
 # Introduction
-Our refined work of ICCV 2023 work [DeT](https://github.com/woshidandan/Image-Color-Aesthetics-Assessment). More powerful framework, higher performance, more functions! Weights and dataset can be downloaded from: 
+Our refined work of ICCV 2023 work [DeT](https://github.com/woshidandan/Image-Color-Aesthetics-Assessment), weights and dataset can be downloaded from: 
 - [DeT_plus_ICAA](https://mega.nz/file/I1UjlYoD#fKkLdtubl5OXpQQXB37_OOy0A9kw8HpuQwW_x80MU-s),
 - [DeT_plus_PARA](https://mega.nz/file/Mp82UKoI#7a4ik8jFBLnQewE0-bPNg5rz1F6-XMOp1WSXw_FG3XQ),
 - [DeT_plus_SPAQ](https://mega.nz/file/Z9tUVJKI#HqgW77gxdtHF6QG5GfnLA31druLONw9IFlsvY3w4W_Q),
