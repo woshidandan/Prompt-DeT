@@ -9,7 +9,7 @@ Rethinking Image Color Aesthetics Assessment: Models, Datasets and Benchmarks
 </h1>
 <h4>
 <b>
-Shuai He, Yi Xiao，Anlong Ming, Huadong Ma
+Shuai He, Yi Xiao, Anlong Ming, Huadong Ma
     
 Beijing University of Posts and Telecommunications
 </b>
