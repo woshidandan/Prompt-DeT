@@ -63,26 +63,30 @@ We develop a comprehensive benchmark comprising of 17 methods, which is the most
 
 ## Requirement
 ```
-einops==0.6.1
-ftfy==6.1.1
-nni==2.10.1
-numpy==1.25.2
-pandas==2.1.0
-Pillow==10.0.0
+einops==0.8.0
+ftfy==6.3.1
+matplotlib==3.8.0
+numpy==2.1.3
+pandas==2.2.3
+Pillow==9.0.1
+Pillow==11.0.0
+pytorch_model_summary==0.1.2
 PyYAML==6.0.1
+PyYAML==6.0.2
 regex==2023.8.8
-Requests==2.31.0
-scikit_learn==1.3.0
-scipy==1.11.2
-setuptools==65.5.1
+Requests==2.32.3
+scikit_learn==1.3.1
+scipy==1.14.1
+seaborn==0.13.2
+setuptools==68.0.0
+setuptools==74.1.2
 tensorboardX==2.6.2.2
+tensorboardX==2.6.2.2
+thop==0.1.1.post2209072238
 timm==0.9.7
-tokenizers==0.15.2
-tomli==2.0.1
 torch==2.0.1
 torchvision==0.15.2
 tqdm==4.65.2
-transformers==4.39.3
 yacs==0.1.8
 ```
 
