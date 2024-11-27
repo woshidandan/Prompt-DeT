@@ -34,6 +34,7 @@ To enhance the ICAA17K+ dataset, we have incorporated 2,000 detailed labels conc
 # Performance of Prompt-DeT
 We develop a comprehensive benchmark comprising of 17 methods, which is the most extensive to date, based on three datasets (ICAA20K, ICAA17K, SPAQ, and PARA) for evaluating the holistic and sub-attribute performance of ICAA methods. Our work achieves state-of-the-art (SOTA) performance on all benchmarks.
 <div align="center">
+    
 ![ICAA20K](https://github.com/user-attachments/assets/9eebb014-4f02-4396-818b-72cb7a96f5a9)
 
 ![ICAA17K](https://github.com/user-attachments/assets/ba27ba75-f244-45dd-b922-88c3fd3cbb34)
