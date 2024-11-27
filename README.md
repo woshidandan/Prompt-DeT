@@ -23,12 +23,10 @@ This repo contains the official implementation and the new dataset ICAA20K of th
 
 * **Brief Version**: Impressive zero-shot and fine-tuning capabilities on sub-attribute ICAA tasks, and even supports user-customized scenarios.
 
-* **DR Version**: Image color aesthetics assessment (ICAA) aims to assess color aesthetics based on human perception, which is crucial for various applications such as imaging measurement and image analysis.
-The ceiling of previous methods is constrained to a holistic evaluation approach, which hinders their ability to offer explainability from multiple perspectives. Moreover, existing ICAA datasets often lack multi-attribute annotations beyond holistic scores, which are necessary to provide effective supervision for training or validating models' multi-perspective assessment capabilities, thereby hindering their capacity for effective generalization.To advance ICAA research:
+* **DR Version**: Image color aesthetics assessment (ICAA) aims to assess color aesthetics based on human perception, which is crucial for various applications such as imaging measurement and image analysis. The ceiling of previous methods is constrained to a holistic evaluation approach, which hinders their ability to offer explainability from multiple perspectives. Moreover, existing ICAA datasets often lack multi-attribute annotations beyond holistic scores, which are necessary to provide effective supervision for training or validating models' multi-perspective assessment capabilities, thereby hindering their capacity for effective generalization.To advance ICAA research:
     * We propose an ``all-in-one'' model called the Prompt-Guided Delegate Transformer (Prompt-DeT). Prompt-DeT utilizes dedicated prompt strategies and an Aesthetic Adapter (Aes-Adapter), to exploit the rich visual language prior embedded in large pre-trained vision-language models. It enhances the model's perception of multiple attributes, enabling impressive zero-shot and fine-tuning capabilities on sub-attribute tasks, and even supports user-customized scenarios.
     * We elaborately construct a color-oriented dataset, ICAA20K, containing 20K images and 6 annotated dimensions to support both holistic and sub-attribute ICAA tasks.
-    * We develop a comprehensive benchmark comprising of 17 methods, which is the most extensive to date, based on four datasets (ICAA20K, ICAA17K, SPAQ, and PARA) for evaluating the holistic and sub-attribute performance of ICAA methods.
-Our work, not only achieves state-of-the-art (SOTA) performance, but also offers the community a roadmap to explore solutions for ICAA.
+    * We develop a comprehensive benchmark comprising of 17 methods, which is the most extensive to date, based on four datasets (ICAA20K, ICAA17K, SPAQ, and PARA) for evaluating the holistic and sub-attribute performance of ICAA methods. Our work, not only achieves state-of-the-art (SOTA) performance, but also offers the community a roadmap to explore solutions for ICAA.
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/79a7eccb-abdf-465b-b1a3-e59d3bf27887" alt="Image text" width="700px" />
@@ -79,7 +77,12 @@ scipy==1.11.2
 setuptools==65.5.1
 tensorboardX==2.6.2.2
 timm==0.9.7
-tqdm==4.66.1
+tokenizers==0.15.2
+tomli==2.0.1
+torch==2.0.1
+torchvision==0.15.2
+tqdm==4.65.2
+transformers==4.39.3
 yacs==0.1.8
 ```
 
