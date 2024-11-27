@@ -20,15 +20,10 @@ Beijing University of Posts and Telecommunications
 
 # Introduction
 Our refined work of ICCV 2023 work [DeT](https://github.com/woshidandan/Image-Color-Aesthetics-Assessment), weights and dataset can be downloaded from: 
-- [DeT_plus_ICAA](https://mega.nz/file/I1UjlYoD#fKkLdtubl5OXpQQXB37_OOy0A9kw8HpuQwW_x80MU-s),
-- [DeT_plus_PARA](https://mega.nz/file/Mp82UKoI#7a4ik8jFBLnQewE0-bPNg5rz1F6-XMOp1WSXw_FG3XQ),
-- [DeT_plus_SPAQ](https://mega.nz/file/Z9tUVJKI#HqgW77gxdtHF6QG5GfnLA31druLONw9IFlsvY3w4W_Q),
-- [ICAA17K+ dataset](https://mega.nz/file/V8kwgLaD#ty6IG7gyQduanfd1ViloZVlREq18e0MuWwqCnvTMtiM),
-- [RN50](https://mega.nz/file/9sUAzZIZ#Cu4C5QamEn41abU6yz_39IN0by-qIuMkRmh4YFBTy8I).
+- [Prompt-DeT_Weights](https://drive.google.com/drive/folders/1E7aOnGsvu1ogk-pDmEu4V9DFFq_XJcZI),
+- [ICAA20K Dataset](https://drive.google.com/file/d/1tUo9o--ls18phooYHZhAPrkYf8IKqrGr/view?usp=sharing),
 
-Details will be published after the acceptance of the paper, we aspire for our work to make a valuable contribution to the ongoing research on ICAA within the community!
-
-# ICAA17K+
+# ICAA20K
 To enhance the ICAA17K+ dataset, we have incorporated 2,000 detailed labels concerning color attributes including colorfulness, harmony, and temperature annotations.
 <div align="center">
     
@@ -36,15 +31,16 @@ To enhance the ICAA17K+ dataset, we have incorporated 2,000 detailed labels conc
 
 </div>
 
-# Performance of DeT-Plus
-We develop a comprehensive benchmark comprising of 17 methods, which is the most extensive to date, based on three datasets (ICAA17K+, SPAQ, and PARA) for evaluating the holistic and sub-attribute performance of ICAA methods. Our work achieves state-of-the-art (SOTA) performance on all benchmarks.
+# Performance of Prompt-DeT
+We develop a comprehensive benchmark comprising of 17 methods, which is the most extensive to date, based on three datasets (ICAA20K, ICAA17K, SPAQ, and PARA) for evaluating the holistic and sub-attribute performance of ICAA methods. Our work achieves state-of-the-art (SOTA) performance on all benchmarks.
 <div align="center">
-  
-![image](https://github.com/woshidandan/DeT-Plus/assets/15050507/7269c1a4-8381-4b79-94e8-b9df5340f994)
+![ICAA20K](https://github.com/user-attachments/assets/9eebb014-4f02-4396-818b-72cb7a96f5a9)
 
-![image](https://github.com/woshidandan/DeT-Plus/assets/15050507/589cfcaf-05c9-4af5-9083-87aae294e9ca)
+![ICAA17K](https://github.com/user-attachments/assets/ba27ba75-f244-45dd-b922-88c3fd3cbb34)
 
-![image](https://github.com/woshidandan/DeT-Plus/assets/15050507/81db22d9-6319-4da8-8708-0b96188e854a)
+![SPAQ](https://github.com/user-attachments/assets/1f959023-5811-4f4d-9f9e-18b346da4933)
+
+![PARA](https://github.com/user-attachments/assets/f6f7dd4c-c586-4eee-b148-f3c5bd4f8600)
 
 </div>
 
