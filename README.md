@@ -27,36 +27,37 @@ To advance ICAA research, 1) we propose an ``all-in-one'' model called the Promp
 3) We develop a comprehensive benchmark comprising of 17 methods, which is the most extensive to date, based on four datasets (ICAA20K, ICAA17K, SPAQ, and PARA) for evaluating the holistic and sub-attribute performance of ICAA methods.
 Our work, not only achieves state-of-the-art (SOTA) performance, but also offers the community a roadmap to explore solutions for ICAA.
 
-![compare](https://github.com/user-attachments/assets/79a7eccb-abdf-465b-b1a3-e59d3bf27887)
+<div align="center">
+<img src="https://github.com/user-attachments/assets/79a7eccb-abdf-465b-b1a3-e59d3bf27887" alt="Image text" width="700px" />
+</div>
 
 
 ## ICAA20K Dataset
 To enhance the ICAA17K+ dataset, we have incorporated 2,000 detailed labels concerning color attributes including colorfulness, harmony, and temperature annotations. The dataset can be downloaded from: [ICAA20K Dataset](https://drive.google.com/file/d/1tUo9o--ls18phooYHZhAPrkYf8IKqrGr/view?usp=sharing).
-<div align="center">
-    
-![image](https://github.com/woshidandan/DeT-Plus/assets/15050507/561076c4-d14d-4f06-afab-82e986e64901)
 
+<div align="center">
+<img src="https://github.com/woshidandan/DeT-Plus/assets/15050507/561076c4-d14d-4f06-afab-82e986e64901" alt="Image text" width="700px" />
 </div>
 
 ## Prompt-DeT
 we propose the Prompt-Guided Delegate Transformer (Prompt-DeT). Firstly, it employs the proposed Aes-Adapter and contrastive learning to align attribute-related features with CLIP’s vast knowledge. Guided by our explainable attribute-aware prompts, it extracts attribute-related features to adapt to downstream tasks, and enhances the understanding of diverse aesthetic attributes.
 Secondly, Prompt-DeT simulates human behavior in color space segmentation and adaptively assigns different attention weights based on color importance. This approach further extracts explainable features to express the color information. The weight can be downloaded from: [Prompt-DeT_Weights](https://drive.google.com/drive/folders/1E7aOnGsvu1ogk-pDmEu4V9DFFq_XJcZI).
 
-![Prompt-DeT](https://github.com/user-attachments/assets/61265d61-48f0-417d-8e1b-f3a04fbe9cf5)
+<div align="center">
+<img src="https://github.com/user-attachments/assets/61265d61-48f0-417d-8e1b-f3a04fbe9cf5" alt="Image text" width="700px" />
+</div>
+
+
 
 ## Performance and Benchmark
 
 We develop a comprehensive benchmark comprising of 17 methods, which is the most extensive to date, based on three datasets (ICAA20K, ICAA17K, SPAQ, and PARA) for evaluating the holistic and sub-attribute performance of ICAA methods. Our work achieves state-of-the-art (SOTA) performance on all benchmarks.
+
 <div align="center">
-    
-![ICAA20K](https://github.com/user-attachments/assets/9eebb014-4f02-4396-818b-72cb7a96f5a9)
-
-![ICAA17K](https://github.com/user-attachments/assets/ba27ba75-f244-45dd-b922-88c3fd3cbb34)
-
-![SPAQ](https://github.com/user-attachments/assets/1f959023-5811-4f4d-9f9e-18b346da4933)
-
-![PARA](https://github.com/user-attachments/assets/f6f7dd4c-c586-4eee-b148-f3c5bd4f8600)
-
+<img src="https://github.com/user-attachments/assets/9eebb014-4f02-4396-818b-72cb7a96f5a9" alt="Image text" width="700px" />
+    <img src="https://github.com/user-attachments/assets/ba27ba75-f244-45dd-b922-88c3fd3cbb34" alt="Image text" width="700px" />
+    <img src="https://github.com/user-attachments/assets/1f959023-5811-4f4d-9f9e-18b346da4933" alt="Image text" width="700px" />
+    <img src="https://github.com/user-attachments/assets/f6f7dd4c-c586-4eee-b148-f3c5bd4f8600" alt="Image text" width="700px" />
 </div>
 
 ## Requirement
