@@ -3,9 +3,6 @@ import requests
 
 import torch
 import torch.nn as nn
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
 
 Gl_z = torch.ones(64, 10)
 
@@ -57,26 +54,6 @@ def print_dict(model_path):
     # 加载.pth文件中的模型
     state_dict = torch.load(model_path)
     for k, v in state_dict.items():
-        # print(k)
+        print(k)
         if "alpha" in k:
             print(v)
-
-
-def plot_csv(csv_path=""):
-    df = pd.read_csv(csv_path)
-    data = []
-    for k, v in df.items():
-        data.append(v)
-    x = data[0]
-    y = data[1]
-    plt.xlim(0, 1)
-    plt.ylim(0, 1)
-    plt.scatter(np.array(x), np.array(y), s=20, alpha=0.5)
-    plt.savefig(csv_path.split(".")[0])
-    # plt.savefig("softmax_logit_scale")
-
-
-if __name__ == "__main__":
-    epoch = 7
-    csv_path = f"PCCD_test_result_epoch{epoch}.csv"
-    plot_csv(csv_path)

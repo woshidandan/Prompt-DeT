@@ -26,21 +26,21 @@ MODEL:
     attn_drop_rate: 0.0
     drop_path_rate: 0.5
     classnames: [
-        ["beautiful.", "ugly."],
-        ["colorful.", "monotone."],
+        # ["beautiful.", "ugly."],
         ["warm tone.", "cold tone."],
+        ["colorful.", "monotone."],
         ["harmonious color.", "chaotic color."],
     ]
     means: [
-        0.5430292152312776,
-        0.5746566870547009,
+        # 0.5430292152312776,
         0.5060040414776488,
+        0.5746566870547009,
         0.5041112922830655,
     ]
     stds: [
-        0.026028287910949126,
-        0.04772679232711666,
+        # 0.026028287910949126,
         0.021420622256879244,
+        0.04772679232711666,
         0.024548609685370107,
     ]
     pretrained_clip_path: 'checkpoint/RN50.pt'

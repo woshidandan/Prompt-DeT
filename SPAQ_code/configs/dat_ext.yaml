@@ -45,8 +45,6 @@ MODEL:
     ]
     pretrained_clip_path: 'checkpoint/RN50.pt'
     clip_pretrained: True
-    adapter_finetune: False
-    curve_mapping: False
     
 
 TRAIN:

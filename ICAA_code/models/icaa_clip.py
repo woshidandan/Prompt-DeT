@@ -80,6 +80,7 @@ class ICAA_CLIP(nn.Module):
 
     def distrib_mapping(self, x, idx):
         return (x - self.means[idx]) * (self.std / self.stds[idx]) + self.mean
+        # return x
 
     def encode_image(self, image, pos_embedding):
         return self.clip_model.encode_image(image, pos_embedding)

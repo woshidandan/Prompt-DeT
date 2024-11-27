@@ -50,9 +50,8 @@ def parse_option():
 def test():
     output_folder = f"./test/color_factor_{time.time()/100:.0f}"  # replace by your output image folder
     result_list = [
-        "aesthetic",
-        "colorfulness",
         "temperature",
+        "colorfulness",
         "harmony",
     ]
     for i in result_list:
@@ -107,8 +106,9 @@ if __name__ == "__main__":
         ]
     )
     # replace by your test image folder
-    data_folder = "/home/xiaoyi/datasets/ICAA17K"
+    data_folder = "/home/xiaoyi/datasets/ICAA17K/temperature"
     device = torch.device("cuda:1") if torch.cuda.is_available() else torch.device("cpu")  # replace by yours
+    print(device)
     opt = option.init()
     opt = vars(opt)
     args, config = parse_option()
@@ -120,3 +120,15 @@ if __name__ == "__main__":
     model.to(device)
     model.eval()
     test()
+
+    # import torch
+    # from thop import profile
+
+    # # 假设你的模型是 model，输入张量大小是 (batch_size, channels, height, width)
+    # input_tensor = torch.randn(1, 3, 224, 224)
+    # input_tensor = input_tensor.to(device)
+
+    # # 计算 FLOPs 和参数量
+    # flops, params = profile(model, inputs=(input_tensor,))
+    # print(f"FLOPs: {flops}")
+    # print(f"Parameters: {params}")

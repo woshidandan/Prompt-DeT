@@ -251,10 +251,13 @@ class DAT(nn.Module):
         self.fc = nn.Sequential()
         self.fc.add_module("linear1", nn.Linear(2048, 1024))
         self.fc.add_module("act1", nn.GELU())
+        self.fc.add_module("drop1", nn.Dropout(0.5))
         self.fc.add_module("linear2", nn.Linear(1024, 256))
         self.fc.add_module("act2", nn.GELU())
+        self.fc.add_module("drop2", nn.Dropout(0.3))
         self.fc.add_module("linear3", nn.Linear(256, 64))
         self.fc.add_module("act3", nn.GELU())
+        self.fc.add_module("drop3", nn.Dropout(0.2))
         self.fc.add_module("linear4", nn.Linear(64, num_classes))
         self.sg = nn.Sigmoid()
 

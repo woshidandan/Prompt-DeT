@@ -15,6 +15,22 @@ class ICAA17KDataset(Dataset):
         self.df = pd.read_csv(path_to_csv)
         self.images_path = images_path
         self.if_train = if_train
+        self.mean = 1.0 / 2.0
+        self.std = 1.0 / 6.0
+        self.means = [
+            0.5891324490297224,
+            0.5935361336281012,
+            0.559279390813068,
+            0.71267963645296,
+        ]
+
+        self.stds = [
+            0.0043606940609912485,
+            0.15503706305078224,
+            0.2304456269826001,
+            0.11940672015503832,
+        ]
+
         if if_train:
             self.transform = transforms.Compose([transforms.Resize((256, 256)), transforms.RandomHorizontalFlip(), transforms.RandomCrop((224, 224)), transforms.ToTensor(), normalize])
         else:
@@ -25,9 +41,9 @@ class ICAA17KDataset(Dataset):
 
     def __getitem__(self, item):
         row = self.df.iloc[item]
-        # score_names = ['color', 'MOS']
-        score_names = ["color"]
-        y = np.array([row[k] / 10 for k in score_names])
+        score_names = ["holistic_color", "temperature", "colorfulness", "color_harmony"]
+        # score_names = ["color"]
+        y = np.array([self.norm(row[k] / 10, score_names.index(k)) for k in score_names])
 
         image_id = row["ID"]
         image_path = os.path.join(self.images_path, f"{image_id}")
@@ -36,3 +52,9 @@ class ICAA17KDataset(Dataset):
         x = self.transform(image)
 
         return x, y.astype("float32")
+
+    def norm(self, x, idx):
+        if idx != 0:
+            return (x - self.means[idx]) * (self.std / self.stds[idx]) + self.mean
+        else:
+            return x
