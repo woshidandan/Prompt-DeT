@@ -34,7 +34,7 @@ This repo contains the official implementation and the new dataset ICAA20K of th
 
 
 ## ICAA20K Dataset
-To enhance the ICAA17K+ dataset, we have incorporated 2,000 detailed labels concerning color attributes including colorfulness, harmony, and temperature annotations. The dataset can be downloaded from: [ICAA20K Dataset](https://drive.google.com/file/d/1tUo9o--ls18phooYHZhAPrkYf8IKqrGr/view?usp=sharing).
+To enhance the ICAA17K+ dataset, we have incorporated 2,000 detailed labels concerning color attributes including colorfulness, harmony, and temperature annotations. `The dataset can be downloaded from: [ICAA20K Dataset](https://drive.google.com/file/d/1tUo9o--ls18phooYHZhAPrkYf8IKqrGr/view?usp=sharing).'
 
 <div align="center">
 <img src="https://github.com/woshidandan/DeT-Plus/assets/15050507/561076c4-d14d-4f06-afab-82e986e64901" alt="Image text" width="700px" />
@@ -42,7 +42,7 @@ To enhance the ICAA17K+ dataset, we have incorporated 2,000 detailed labels conc
 
 ## Prompt-DeT
 we propose the Prompt-Guided Delegate Transformer (Prompt-DeT). Firstly, it employs the proposed Aes-Adapter and contrastive learning to align attribute-related features with CLIP’s vast knowledge. Guided by our explainable attribute-aware prompts, it extracts attribute-related features to adapt to downstream tasks, and enhances the understanding of diverse aesthetic attributes.
-Secondly, Prompt-DeT simulates human behavior in color space segmentation and adaptively assigns different attention weights based on color importance. This approach further extracts explainable features to express the color information. The weight can be downloaded from: [Prompt-DeT_Weights](https://drive.google.com/drive/folders/1E7aOnGsvu1ogk-pDmEu4V9DFFq_XJcZI).
+Secondly, Prompt-DeT simulates human behavior in color space segmentation and adaptively assigns different attention weights based on color importance. This approach further extracts explainable features to express the color information. `The weight can be downloaded from: [Prompt-DeT_Weights](https://drive.google.com/drive/folders/1E7aOnGsvu1ogk-pDmEu4V9DFFq_XJcZI).'
 
 <div align="center">
 <img src="https://github.com/user-attachments/assets/61265d61-48f0-417d-8e1b-f3a04fbe9cf5" alt="Image text" width="700px" />
