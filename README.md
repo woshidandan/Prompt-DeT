@@ -16,22 +16,36 @@ Beijing University of Posts and Telecommunications
 </h4>
 </div>
 
+This repo contains the official implementation and the new dataset ICAA20K of the **Information Fusion 2024** paper.
 
 
-# Introduction
-Our refined work of ICCV 2023 work [DeT](https://github.com/woshidandan/Image-Color-Aesthetics-Assessment), weights and dataset can be downloaded from: 
-- [Prompt-DeT_Weights](https://drive.google.com/drive/folders/1E7aOnGsvu1ogk-pDmEu4V9DFFq_XJcZI),
-- [ICAA20K Dataset](https://drive.google.com/file/d/1tUo9o--ls18phooYHZhAPrkYf8IKqrGr/view?usp=sharing),
+## Introduction
+Image color aesthetics assessment (ICAA) aims to assess color aesthetics based on human perception, which is crucial for various applications such as imaging measurement and image analysis.
+The ceiling of previous methods is constrained to a holistic evaluation approach, which hinders their ability to offer explainability from multiple perspectives. Moreover, existing ICAA datasets often lack multi-attribute annotations beyond holistic scores, which are necessary to provide effective supervision for training or validating models' multi-perspective assessment capabilities, thereby hindering their capacity for effective generalization.
+To advance ICAA research, 1) we propose an ``all-in-one'' model called the Prompt-Guided Delegate Transformer (Prompt-DeT). Prompt-DeT utilizes dedicated prompt strategies and an Aesthetic Adapter (Aes-Adapter), to exploit the rich visual language prior embedded in large pre-trained vision-language models. It enhances the model's perception of multiple attributes, enabling impressive zero-shot and fine-tuning capabilities on sub-attribute tasks, and even supports user-customized scenarios.
+2) We elaborately construct a color-oriented dataset, ICAA20K, containing 20K images and 6 annotated dimensions to support both holistic and sub-attribute ICAA tasks.    
+3) We develop a comprehensive benchmark comprising of 17 methods, which is the most extensive to date, based on four datasets (ICAA20K, ICAA17K, SPAQ, and PARA) for evaluating the holistic and sub-attribute performance of ICAA methods.
+Our work, not only achieves state-of-the-art (SOTA) performance, but also offers the community a roadmap to explore solutions for ICAA.
 
-# ICAA20K
-To enhance the ICAA17K+ dataset, we have incorporated 2,000 detailed labels concerning color attributes including colorfulness, harmony, and temperature annotations.
+![compare](https://github.com/user-attachments/assets/79a7eccb-abdf-465b-b1a3-e59d3bf27887)
+
+
+## ICAA20K Dataset
+To enhance the ICAA17K+ dataset, we have incorporated 2,000 detailed labels concerning color attributes including colorfulness, harmony, and temperature annotations. The dataset can be downloaded from: [ICAA20K Dataset](https://drive.google.com/file/d/1tUo9o--ls18phooYHZhAPrkYf8IKqrGr/view?usp=sharing).
 <div align="center">
     
 ![image](https://github.com/woshidandan/DeT-Plus/assets/15050507/561076c4-d14d-4f06-afab-82e986e64901)
 
 </div>
 
-# Performance of Prompt-DeT
+## Prompt-DeT
+we propose the Prompt-Guided Delegate Transformer (Prompt-DeT). Firstly, it employs the proposed Aes-Adapter and contrastive learning to align attribute-related features with CLIP’s vast knowledge. Guided by our explainable attribute-aware prompts, it extracts attribute-related features to adapt to downstream tasks, and enhances the understanding of diverse aesthetic attributes.
+Secondly, Prompt-DeT simulates human behavior in color space segmentation and adaptively assigns different attention weights based on color importance. This approach further extracts explainable features to express the color information. The weight can be downloaded from: [Prompt-DeT_Weights](https://drive.google.com/drive/folders/1E7aOnGsvu1ogk-pDmEu4V9DFFq_XJcZI).
+
+![Prompt-DeT](https://github.com/user-attachments/assets/61265d61-48f0-417d-8e1b-f3a04fbe9cf5)
+
+## Performance and Benchmark
+
 We develop a comprehensive benchmark comprising of 17 methods, which is the most extensive to date, based on three datasets (ICAA20K, ICAA17K, SPAQ, and PARA) for evaluating the holistic and sub-attribute performance of ICAA methods. Our work achieves state-of-the-art (SOTA) performance on all benchmarks.
 <div align="center">
     
@@ -45,7 +59,7 @@ We develop a comprehensive benchmark comprising of 17 methods, which is the most
 
 </div>
 
-# Requirement
+## Requirement
 ```
 einops==0.6.1
 ftfy==6.1.1
@@ -64,3 +78,91 @@ timm==0.9.7
 tqdm==4.66.1
 yacs==0.1.8
 ```
+
+
+## If you find our work is useful, pleaes cite our paper:
+```
+@article{he2025prompt,
+  title={Prompt-guided image color aesthetics assessment: Models, datasets and benchmarks},
+  author={He, Shuai and Xiao, Yi and Ming, Anlong and Ma, Huadong},
+  journal={Information Fusion},
+  volume={114},
+  pages={102706},
+  year={2025},
+  publisher={Elsevier}
+}
+```
+
+## Related Work from Our Group
+<table>
+  <thead align="center">
+    <tr>
+      <td><b>🎁 Projects</b></td>
+      <td><b>📚 Publication</b></td>
+      <td><b>🌈 Content</b></td>
+      <td><b>⭐ Stars</b></td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/woshidandan/Pixel-level-No-reference-Image-Exposure-Assessment"><b>Pixel-level image exposure assessment【首个像素级曝光评估】</b></a></td>
+      <td><b>NIPS 2024</b></td>
+      <td><b>Code, Dataset</b></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/woshidandan/Pixel-level-No-reference-Image-Exposure-Assessment?style=flat-square&labelColor=343b41"/></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/woshidandan/Long-Tail-image-aesthetics-and-quality-assessment"><b>Long-tail solution for image aesthetics assessment【美学评估数据不平衡解决方案】</b></a></td>
+      <td><b>ICML 2024</b></td>
+      <td><b>Code</b></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/woshidandan/Long-Tail-image-aesthetics-and-quality-assessment?style=flat-square&labelColor=343b41"/></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/woshidandan/Prompt-DeT"><b>CLIP-based image aesthetics assessment【基于CLIP多因素色彩美学评估】</b></a></td>
+      <td><b>Information Fusion 2024</b></td>
+      <td><b>Code, Dataset</b></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/woshidandan/Prompt-DeT?style=flat-square&labelColor=343b41"/></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/woshidandan/SR-IAA-image-aesthetics-and-quality-assessment"><b>Compare-based image aesthetics assessment【基于对比学习的多因素美学评估】</b></a></td>
+      <td><b>ACMMM 2024</b></td>
+      <td><b>Code</b></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/woshidandan/SR-IAA-image-aesthetics-and-quality-assessment?style=flat-square&labelColor=343b41"/></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/woshidandan/Image-Color-Aesthetics-and-Quality-Assessment"><b>Image color aesthetics assessment【首个色彩美学评估】</b></a></td>
+      <td><b>ICCV 2023</b></td>
+      <td><b>Code, Dataset</b></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/woshidandan/Image-Color-Aesthetics-and-Quality-Assessment?style=flat-square&labelColor=343b41"/></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/woshidandan/Image-Aesthetics-and-Quality-Assessment"><b>Image aesthetics assessment【通用美学评估】</b></a></td>
+      <td><b>ACMMM 2023</b></td>
+      <td><b>Code</b></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/woshidandan/Image-Aesthetics-and-Quality-Assessment?style=flat-square&labelColor=343b41"/></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/woshidandan/TANet-image-aesthetics-and-quality-assessment"><b>Theme-oriented image aesthetics assessment【首个多主题美学评估】</b></a></td>
+      <td><b>IJCAI 2022</b></td>
+      <td><b>Code, Dataset</b></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/woshidandan/TANet-image-aesthetics-and-quality-assessment?style=flat-square&labelColor=343b41"/></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/woshidandan/AK4Prompts"><b>Select prompt based on image aesthetics assessment【基于美学评估的提示词筛选】</b></a></td>
+      <td><b>IJCAI 2024</b></td>
+      <td><b>Code</b></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/woshidandan/AK4Prompts?style=flat-square&labelColor=343b41"/></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/mRobotit/M2Beats"><b>Motion rhythm synchronization with beats【动作与韵律对齐】</b></a></td>
+      <td><b>IJCAI 2024</b></td>
+      <td><b>Code, Dataset</b></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/mRobotit/M2Beats?style=flat-square&labelColor=343b41"/></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/woshidandan/Champion-Solution-for-CVPR-NTIRE-2024-Quality-Assessment-on-AIGC"><b>Champion Solution for AIGC Image Quality Assessment【NTIRE AIGC图像质量评估赛道冠军】</b></a></td>
+      <td><b>CVPRW NTIRE 2024</b></td>
+      <td><b>Code</b></td>
+      <td><img alt="Stars" src="https://img.shields.io/github/stars/woshidandan/Champion-Solution-for-CVPR-NTIRE-2024-Quality-Assessment-on-AIGC?style=flat-square&labelColor=343b41"/></td>
+    </tr>
+  </tbody>
+</table>
